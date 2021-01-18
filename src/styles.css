@@ -4,6 +4,22 @@
 /**************
 //colors
 **************/
+/**************
+//global variables
+**************/
+:root {
+  --color_primary: #eb2f64;
+  --color_light: #ff3366;
+  --color_dark: #ba265d;
+  --color_grey_light: #faf9f9;
+  --color_grey_light-2:#f4f2f2;
+  --color_grey_light-3:#f0eeee;
+  --color_grey_light-4:#ccc;
+  --color_grey_dark: #333;
+  --color_grey_dark-2: #777;
+  --color_grey_dark-3: #999;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -23,5 +39,44 @@ body {
   line-height: 1.7;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--color_primary)), to(var(--color_dark)));
+  background-image: linear-gradient(to right bottom, var(--color_primary), var(--color_dark));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 10vh auto;
+  background-color: var(--color_grey_light-2);
+  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 90vh;
+}
+
+.header {
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--color_grey_light-2);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sideBar {
+  background-color: var(--color_grey_dark);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18%;
+          flex: 0 0 18%;
+}
+
+.hotelView {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: orangered;
 }
 /*# sourceMappingURL=styles.css.map */
