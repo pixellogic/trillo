@@ -1,0 +1,19 @@
+//variables
+$default_font_size: 1.6rem;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.6%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:#777;
+    line-height: 1.7;
+    box-sizing: border-box;
+}
